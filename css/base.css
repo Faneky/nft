@@ -96,6 +96,18 @@ body{
     flex-wrap: wrap;
     align-items: center;
 }
+/***************************/
+.nav{
+    width: 320px;
+    background-color: rgb(28, 18, 31);
+    z-index: 101;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
 .nav-blank{
     margin-left: 50px;
     margin-top: 40px;
@@ -109,17 +121,6 @@ body{
 .nav-blank > *{
     margin-bottom: 30px;
 }
-.nav{
-    width: 320px;
-    background-color: rgb(28, 18, 31);
-    z-index: 101;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-}
 .nav-close img{
     margin-top: 60px;
     margin-left: 50px;
@@ -129,20 +130,7 @@ body{
 .nav.visible{
     transform: translateX(0%);
 }
-.nav-close {
-}
-.nav-blank {
-}
-
-
-
-
-
-
-
-
-
-
+/**************************************/
 .nav-link {
     color: var(--white-txt);
     font-family: 'Work Sans', sans-serif;
