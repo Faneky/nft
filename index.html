@@ -20,11 +20,19 @@
                     <a class="nav-link" href="#">Creators</a>
                     <a class="nav-link" href="#">Community</a>
                     <a class="nav-link wallet" href="#">Connect Wallet</a>
-                    <a class="nav-burger" href="#"><img src="./img/burger-svg.svg" alt="burger"></a>
+                    <button class="nav-burger nav-open" href="#"><img src="./img/burger-svg.svg" alt="burger"></button>
                 </nav>
             </div>
         </div>
     </header>
+    <div class="nav">
+        <button class="nav-close" href="#"><img src="./img/burger-close.svg" alt="burger"></button>
+        <ul class="nav-blank">
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Creators</a></li>
+            <li><a href="#">Community</a></li>
+        </ul>
+    </div>
     <section class="hero">
         <div class="container">
             <div class="hero-container">
@@ -89,8 +97,12 @@
             <div class="circle purple"></div>
             <h2 class="title auctions-title">Live Auctions</h2>
             <div class="bid-slider">
-                <img class="" src="./img/bi-arr.svg" alt="">
-                <img class="" src="./img/bi-arr-act.svg" alt="">
+                <button class="btn-sl-left">
+                    <img src="./img/bi-arr.svg" alt="">
+                </button>
+                <button class="btn-sl-right">
+                    <img class="btn-sl-right" src="./img/bi-arr-act.svg" alt="">
+            </button>
             </div>
             <div class="bid-slider-elem">
                 <div class="bid-auctions">
@@ -465,6 +477,6 @@
         </div>
     </footer>
 </div>
-<!-- <script src="./script.js"></script> -->
+<script src="./script.js"></script>
 </body>
 </html>

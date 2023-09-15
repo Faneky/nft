@@ -1,6 +1,19 @@
-p{
+p,
+li{
     margin: 0;
 }
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
 .maketforfigma{
     flex: 0 0 auto;
     background: #313a46;
@@ -67,15 +80,69 @@ body{
 .container {
     max-width: 1470px;
     margin: 0 auto;
+    padding: 0 5px;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: #1C121F;
+    z-index: 100;
 }
 .header-container {
-    margin-right: 15px;
-    margin-top: 35px;
+    padding-top: 35px;
+    padding-bottom: 25px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
 }
+.nav-blank{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.nav-blank a{
+    color: var(--white-txt);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+.nav-blank > *{
+    margin-bottom: 30px;
+}
+.nav{
+    width: 320px;
+    background-color: rgb(28, 18, 31);
+    z-index: 101;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+.nav-close img{
+    margin-top: 60px;
+    margin-left: 50px;
+    height: 48px;
+    width: 48px;
+}
+.nav.visible{
+    transform: translateX(0%);
+}
+.nav-close {
+}
+.nav-blank {
+}
+
+
+
+
+
+
+
+
+
+
 .nav-link {
     color: var(--white-txt);
     font-family: 'Work Sans', sans-serif;
@@ -109,6 +176,10 @@ body{
 .nav-burger{
     display: none;
 }
+.nav-burger img {
+    height: 48px;
+    width: 48px;
+}
 /* .nav-link:focus{
     color: var(--orange);
     padding-bottom: 8px;
@@ -133,8 +204,6 @@ body{
 
     display: flex;
     align-items: center;
-}
-.hero-info {
 }
 .hero-info__title {
     font-family: 'Oxanium', cursive;
@@ -190,8 +259,6 @@ body{
     display: flex;
     justify-content: space-between;
     color: #fff;
-}
-.count-elem {
 }
 .count-num {
     color: var(--white-txt);
@@ -340,6 +407,7 @@ body{
 .bid-slider > * {
     margin-right: 28px;
     cursor: pointer;
+    
 }
 .bid-slider-elem{
     display: flex;
@@ -390,8 +458,6 @@ body{
     font-family: 'Work Sans', sans-serif;
     display: grid;
     grid-template-columns: 70px 1fr 1fr;
-}
-.bid-names{
 }
 .author__info-name {
     color: var(--white-txt);
@@ -842,8 +908,8 @@ body{
         margin-top: 100px;
     }
 }
-@media (max-width: 1234px){
-    .hworks-line:nth-child(3n){
+@media (max-width: 1233px){
+    .hworks-line1{
         margin-top: 80px;
     }
 }
@@ -1154,11 +1220,16 @@ body{
         height: 318px;
     }
     .bid-auctions,
-    .explore-bid {
+    .explore-bid{
         background-color: #3D2942;
         width: 343px;
-        height: 560px;
         padding: 24px 24px;
+    }
+    .bid-auctions {
+        height: 560px;
+    }
+    .explore-bid{
+        height: 510px;
     }
     .author__info-name{
         font-size: 18px;
