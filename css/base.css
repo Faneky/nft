@@ -98,7 +98,7 @@ body{
 }
 /***************************/
 .nav{
-    width: 320px;
+    width: 100%;
     background-color: rgb(28, 18, 31);
     z-index: 101;
     position: fixed;
@@ -786,7 +786,7 @@ body{
     margin-top: 24px;
 }
 .drop-input {
-    padding: 30px 195px 30px 53px;
+    padding: 30px 50px 30px 53px;
     background: transparent;
     border: 1px solid #E7B226;
 
@@ -995,6 +995,9 @@ body{
     .hworks{
         margin-top: 50px;
     }
+    .clients{
+        margin-bottom: 50px;
+    }
     .auctions{
         padding: 60px 0;
         margin-top: 0px;
@@ -1016,6 +1019,9 @@ body{
     .header-container{
         margin-bottom: 12px;
         background-color: #1C121F;
+    }
+    .hworks-elem:nth-child(8) {
+        margin-top: 0px;
     }
     .title{
         font-size: 36px;
@@ -1060,6 +1066,7 @@ body{
         margin: 150px 0 0 0;
     }
     .hero-info{
+        margin-top: 150px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1083,6 +1090,7 @@ body{
     .hero-card-footer{
         width: 100%;
         height: 142px;
+        z-index: 102;
     }
     .clients-container > *:last-child {
         margin-top: 0px;
