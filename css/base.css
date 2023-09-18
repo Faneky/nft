@@ -308,6 +308,7 @@ body{
     z-index: 0;
 }
 .hero-card-footer {
+    z-index: 9;
     width: 556px;
     height: 142px;
     background: #fff;
@@ -315,7 +316,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 12;
     margin-top: -100px;
 }
 .card-footer-elem {
