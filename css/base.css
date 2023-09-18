@@ -116,7 +116,7 @@ body{
     color: var(--white-txt);
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
 }
 .nav-blank > *{
     margin-bottom: 30px;
@@ -1172,6 +1172,7 @@ body{
         margin-right: 0px;
         margin-bottom: 24px;
     }
+
     .explore-circle {
         margin-right: 250px;
     }
@@ -1204,10 +1205,6 @@ body{
         margin-top: 32px;
         padding: 15px 35px;
     }
-    .explore-img img{
-        width: 295px;
-        height: 318px;
-    }
     .bid-slider-elem > * {
         margin-left: 0px;
     }
@@ -1225,7 +1222,7 @@ body{
         height: 560px;
     }
     .explore-bid{
-        height: 510px;
+        height: 405px;
     }
     .author__info-name{
         font-size: 18px;
@@ -1323,7 +1320,6 @@ body{
         font-size: 16px;
     }
     .popular-element {
-        margin-right: 36px;
         width: 343px;
         height: 277px;
         background-color: #3D2942;
@@ -1392,21 +1388,26 @@ body{
     .card-footer-elem{
         margin: 0 10px;
     }
-    .explore-bid {
-        height: 150px;
-    }
-
-    .bid-auctions,
-    .explore-bid {
+    .bid-auctions{
         background-color: #3D2942;
-        width: 250px;
+        width: 300px;
         height: 460px;
         padding: 20px 20px 0 20px;
     }
     .bid-img img {
-        min-width: 250px;
+        min-width: 300px;
         max-width: 0px;
         height: 210px;
+    }
+    .explore-bid {
+        background-color: #3D2942;
+        width: 300px;
+        height: 460px;
+        padding: 20px 20px 0 20px;
+    }
+    .explore-img__img img {
+        max-width: 260px;
+        height: 220px;
     }
     .bid-timer {
         position: absolute;
@@ -1415,10 +1416,6 @@ body{
         font-family: 'Work Sans', sans-serif;
         text-align: center;
         padding: 11px 36px;
-    }
-    .explore-img__img img {
-        min-width: 210px;
-        max-width: 0;
     }
     .explore-img__img::after {
         width: 210px;
