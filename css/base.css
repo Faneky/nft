@@ -189,7 +189,6 @@ body{
 
 }
 .hero-container {
-    gap: 50px;
     display: flex;
     align-items: center;
 }
@@ -243,10 +242,13 @@ body{
     cursor: pointer;
 }
 .hero-counts {
-    margin: 120px 10px 0 0;
+    margin: 120px 80px 0 0;
     display: flex;
     justify-content: space-between;
     color: #fff;
+}
+.count-elem{
+    margin-right: 20px;
 }
 .count-num {
     color: var(--white-txt);
@@ -306,7 +308,7 @@ body{
     z-index: 0;
 }
 .hero-card-footer {
-    width: 558px;
+    width: 556px;
     height: 142px;
     background: #fff;
     backdrop-filter: blur(13.5px);
@@ -336,6 +338,7 @@ body{
 .elem-btn{
     z-index: 10;
     cursor: pointer;
+    margin-right: 55px;
 }
 .card-footer__btn {
     margin-right: -30px;
@@ -1015,6 +1018,9 @@ body{
         height: 430px;
         background: rgba(213, 61, 92, 0.80);
         filter: blur(225px);
+    }
+    .hero-counts{
+        margin: 50px 0 0 0;
     }
     .header-container{
         margin-bottom: 12px;
