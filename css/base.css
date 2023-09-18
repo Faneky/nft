@@ -315,9 +315,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
-    z-index: -1;
+    z-index: 12;
     margin-top: -100px;
 }
 .card-footer-elem {
@@ -923,6 +921,7 @@ body{
     }
     .card-footer-elem{
         margin: 0 20px;
+        z-index: 11;
     }
     .card-footer__btn{
         margin-right: 0;
