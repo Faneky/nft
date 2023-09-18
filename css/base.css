@@ -189,7 +189,7 @@ body{
 
 }
 .hero-container {
-
+    gap: 50px;
     display: flex;
     align-items: center;
 }
@@ -1090,7 +1090,6 @@ body{
     .hero-card-footer{
         width: 100%;
         height: 142px;
-        z-index: 102;
     }
     .clients-container > *:last-child {
         margin-top: 0px;
@@ -1274,7 +1273,6 @@ body{
         grid-template-rows: 1fr 1fr;
         column-gap: 10px;
     }
-    
     .footer-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1365,7 +1363,7 @@ body{
         width: 155px;
     }
     .hero-card-header {
-        width: 280px;
+        width: 350px;
         margin: -48px 15px;
     }
     .card-header__title{
@@ -1379,6 +1377,10 @@ body{
 @media (max-width: 380px){
     .clients-container{
         margin: 0 0;
+    }
+    .hero-card-header {
+        width: 290px;
+        margin: -48px 15px;
     }
     .hero-buttons{
         gap: 20px;
