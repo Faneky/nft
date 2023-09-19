@@ -41,8 +41,6 @@ ol[class] {
 }
 .main{
     flex: 1 0 auto;
-    /***/
-    
 }
 .ellipses{
     z-index: -1;
@@ -168,11 +166,6 @@ body{
     height: 48px;
     width: 48px;
 }
-/* .nav-link:focus{
-    color: var(--orange);
-    padding-bottom: 8px;
-    border-bottom: 2px solid var(--orange);
-} */
 .wallet {
     color: var(--orange);
     font-family: 'Work Sans', sans-serif;
@@ -265,15 +258,12 @@ body{
     font-size: 24px;
     line-height: 148%;
 }
-.hero-card > *{
-    margin-left: 60px;
-}
 .hero-card-header {
     z-index: 1;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    margin: 24px 80px;
+    margin: 24px 20px;
     opacity: 0.95;
     opacity: 0.95;
     background: linear-gradient(93deg, rgba(255, 137, 61, 0.09) -52.37%, rgba(250, 250, 250, 0.90) 137.41%);
@@ -308,7 +298,7 @@ body{
     z-index: 0;
 }
 .hero-card-footer {
-    position: absolute;
+    position: relative;
     z-index: 9;
     width: 556px;
     height: 142px;
@@ -374,6 +364,7 @@ body{
 }
 .auctions-title {
     position: relative;
+    margin-bottom: 60px;
 }
 .purple{
     background: #8613A5;
@@ -390,6 +381,7 @@ body{
 }
 .bid-slider {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     margin-right: 80px;
     margin-bottom: 42px;
@@ -397,14 +389,15 @@ body{
 .bid-slider > * {
     margin-right: 28px;
     cursor: pointer;
-    
+}
+.btn-sl-left{
+    margin-top: -5px;
+    transform: rotate(180deg);
 }
 .bid-slider-elem{
     display: flex;
     overflow: hidden;
-}
-.bid-slider-elem > *{
-    margin-left: 42px;
+    scroll-behavior: smooth;
 }
 .bid-auctions, 
 .explore-bid {
@@ -412,6 +405,12 @@ body{
     width: 431px;
     height: 659px;
     padding: 32px 32px;
+}
+.bid-auctions{
+    margin-right: 36px;
+}
+.bid-auctions:last-child{
+    margin-right: 0px;
 }
 .bid-img {
     position: relative;
@@ -577,15 +576,26 @@ body{
 .popular-title {
     position: relative;
 }
-
 .popular-elements {
     display: flex;
     overflow: hidden;
     position: relative;
+    scroll-behavior: smooth;
+}
+.popular-container{
+    position: relative;
 }
 .arr-right{
+    cursor: pointer;
     position: absolute;
     right: 0;
+    top: 40%;
+}
+.arr-left{
+    transform: rotate(180deg);
+    cursor: pointer;
+    position: absolute;
+    left: 0;
     top: 40%;
 }
 .popular-element {
@@ -596,6 +606,9 @@ body{
 
     padding: 36px;
     box-sizing: border-box;
+}
+.popular-element:last-child{
+    margin-right: 0px;
 }
 .popular-element__info {
     display: flex;
@@ -681,6 +694,12 @@ body{
     width: 415px;
     height: 550px;
     box-sizing: border-box;
+}
+.explore-bid{
+    margin-right: 36px;
+}
+.explore-bid:last-child{
+    margin-right: 0px;
 }
 /*********************RAAAATTTTING************************************/
 .rating {
@@ -910,8 +929,9 @@ body{
 }
 @media (max-width:1202px){
     .hero-card-header{
-    width: 512px;
+    width: 410px;
     height: 98px;
+    margin: 15px 20px;
     }
     .hero-card-img{
         max-width: 450px;
@@ -928,12 +948,11 @@ body{
         margin-right: 0;
         padding: 20px 20px
     }
-    .hero-card-header{
-        width: 410px;
-        margin: 24px 80px;
-    }
     .hero-info__title{
         font-size: 80px;
+    }
+    .hero-counts {
+        margin: 120px 20px 0 0;
     }
 }
 @media (max-width: 1078px){
@@ -956,7 +975,7 @@ body{
     }
     .hero-card-header{
         width: 300px;
-        margin: -70px 80px;
+        margin: -50px 20px;
     }
     .hero-card-img{
         width: 340px;
@@ -1082,12 +1101,9 @@ body{
         text-align: center;
         margin-right: 0;
     }
-    .hero-card > * {
-        margin-left: 0px;
-    }
     .hero-card-header{
-        width: 370px;
-        margin: -70px 15px;
+        width: 360px;
+        margin: -70px 20px;
     }
     .hero-card-img{
         width: 100%;
@@ -1110,15 +1126,6 @@ body{
     }
     .clients-container >*{
         margin: 0;
-    }
-    .bid-slider{
-        display: none;
-    }
-    .bid-slider-elem{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .bid-slider-elem > * {
         margin-bottom: 40px;
@@ -1165,19 +1172,9 @@ body{
     .popular-title {
         padding-bottom: 0px;
     }
-    .arr-right{
-        display: none;
+    .popular-element:last-child{
+        margin-right: 0;
     }
-    .popular-elements{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .popular-element {
-        margin-right: 0px;
-        margin-bottom: 24px;
-    }
-
     .explore-circle {
         margin-right: 250px;
     }
@@ -1210,9 +1207,6 @@ body{
         margin-top: 32px;
         padding: 15px 35px;
     }
-    .bid-slider-elem > * {
-        margin-left: 0px;
-    }
     .explore-img__img::after{
         width: 295px;
         height: 318px;
@@ -1220,10 +1214,8 @@ body{
     .bid-auctions{
         background-color: #3D2942;
         width: 343px;
-        padding: 24px 24px;
-    }
-    .bid-auctions {
         height: 560px;
+        padding: 24px 24px;
     }
     .explore-bid {
         background-color: #3D2942;
@@ -1385,8 +1377,8 @@ body{
         margin: 0 0;
     }
     .hero-card-header {
-        width: 290px;
-        margin: -48px 15px;
+        width: 270px;
+        margin: -48px 20px;
     }
     .hero-buttons{
         gap: 20px;
