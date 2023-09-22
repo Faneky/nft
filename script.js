@@ -1,3 +1,13 @@
+const userNames = document.querySelectorAll('.rating-elem-info__nickname')
+
+fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then(json => {
+        for(let i = 0; i < json.length; i++){
+          let dataNames = json[i].name
+          userNames[i].innerHTML = dataNames
+        }
+      })
 //timer
 function countTimer(targertDate, targetId){
 
@@ -137,14 +147,3 @@ function showCards(){
 
 btnViewAll.addEventListener('click', showCards)
 showCards()
-
-const userNames = document.querySelectorAll('.rating-elem-info__nickname')
-
-fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => response.json())
-      .then(json => {
-        for(let i = 0; i < json.length; i++){
-          let dataNames = json[i].name
-          userNames[i].innerHTML = dataNames
-        }
-      })
