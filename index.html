@@ -16,9 +16,9 @@
             <div class="header-container">
                 <img class="logo" src="./img/logo.svg" alt="logo">
                 <nav class="header-nav">
-                    <a class="nav-link" href="#">Explore</a>
-                    <a class="nav-link" href="#">Creators</a>
-                    <a class="nav-link" href="#">Community</a>
+                    <a class="nav-link nav-link-explore" href="#">Explore</a>
+                    <a class="nav-link nav-link-creators" href="#">Creators</a>
+                    <a class="nav-link nav-link-community" href="#">Community</a>
                     <a class="wallet" href="#">Connect Wallet</a>
                     <button class="nav-burger nav-open" href="#"><img src="./img/burger-svg.svg" alt="burger"></button>
                 </nav>
@@ -28,9 +28,9 @@
     <div class="nav">
         <button class="nav-close" href="#"><img src="./img/burger-close.svg" alt="burger"></button>
         <ul class="nav-blank">
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Creators</a></li>
-            <li><a href="#">Community</a></li>
+            <li><a class="navbar-link nav-link-explore" href="#explore">Explore</a></li>
+            <li><a class="navbar-link nav-link-creators" href="#rating">Creators</a></li>
+            <li><a class="navbar-link nav-link-community" href="#drop">Community</a></li>
         </ul>
     </div>
     <section class="hero">
@@ -288,84 +288,219 @@
         </div>
         </div>
     </section>
-    <section class="explore">
+    <section class="explore" id="explore">
         <div class="container">
             <div class="circle purple explore-circle"></div>
             <h4 class="title popular-title">Explore By Categories</h4>
-            <div class="bid-slider-elem explore-slider-elem">
-                <div class="explore-bid">
-                    <div class="explore-img">
-                        <a class="explore-img__img" href="#"><img  src="./img/explore1.jpg" alt="art"></a>
-                    </div>
-                    <div class="bid-author">
-                        <div class="bid-author__info">
-                            <img class="bid-avatar" src="./img/exp-ava.svg" alt="ava">
-                            <div class="bid-names">
-                                <div class="author__info-name">Virtual Art</div>
-                                <div class="author__info-creator">by @wzard</div>
-                            </div>
-                            <div class="bid-likes explore-likes">
-                                <img src="./img/heart.svg" alt="">
-                                <div class="bid-likes__count explore-likes__count">92</div>
+            <div class="explore-elements">
+                <div class="explore-slider-elem">
+                    <div class="explore-bid">
+                        <div class="explore-img">
+                            <a class="explore-img__img" href="#"><img  src="./img/explore1.jpg" alt="art"></a>
+                        </div>
+                        <div class="bid-author">
+                            <div class="bid-author__info">
+                                <img class="bid-avatar" src="./img/exp-ava.svg" alt="ava">
+                                <div class="bid-names">
+                                    <div class="author__info-name">Virtual Art</div>
+                                    <div class="author__info-creator">by @wzard</div>
+                                </div>
+                                <div class="bid-likes explore-likes">
+                                    <img src="./img/heart.svg" alt="">
+                                    <div class="bid-likes__count explore-likes__count">92</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="bid-price explore-price">
-                        <p class="bid-price__name explore-price__name">Current Bid</p>
-                        <p class="bid-price__price explore-price__price">4.89 ETH</p>
-                    </div>
-                </div>
-                <div class="explore-bid">
-                    <div class="explore-img">
-                        <a class="explore-img__img" href="#"><img  src="./img/exp2.jpg" alt="art"></a>
-                    </div>
-                    <div class="bid-author">
-                        <div class="bid-author__info">
-                            <img class="bid-avatar" src="./img/exp-ava.svg" alt="ava">
-                            <div class="bid-names">
-                                <div class="author__info-name">Virtual Art</div>
-                                <div class="author__info-creator">by @wzard</div>
-                            </div>
-                            <div class="bid-likes explore-likes">
-                                <img src="./img/heart.svg" alt="">
-                                <div class="bid-likes__count explore-likes__count">92</div>
-                            </div>
+                        <div class="bid-price explore-price">
+                            <p class="bid-price__name explore-price__name">Current Bid</p>
+                            <p class="bid-price__price explore-price__price">4.89 ETH</p>
                         </div>
                     </div>
-                    <div class="bid-price">
-                        <p class="bid-price__name explore-price__name">Current Bid</p>
-                        <p class="bid-price__price explore-price__price">4.89 ETH</p>
-                    </div>
-                </div>
-                <div class="explore-bid">
-                    <div class="explore-img">
-                        <a class="explore-img__img" href="#"><img  src="./img/exp3.jpg" alt="art"></a>
-                    </div>
-                    <div class="bid-author">
-                        <div class="bid-author__info">
-                            <img class="bid-avatar" src="./img/exp-ava.svg" alt="ava">
-                            <div class="bid-names">
-                                <div class="author__info-name">Virtual Art</div>
-                                <div class="author__info-creator">by @wzard</div>
-                            </div>
-                            <div class="bid-likes explore-likes">
-                                <img src="./img/heart.svg" alt="">
-                                <div class="bid-likes__count explore-likes__count">92</div>
+                    <div class="explore-bid">
+                        <div class="explore-img">
+                            <a class="explore-img__img" href="#"><img  src="./img/exp2.jpg" alt="art"></a>
+                        </div>
+                        <div class="bid-author">
+                            <div class="bid-author__info">
+                                <img class="bid-avatar" src="./img/exp-ava.svg" alt="ava">
+                                <div class="bid-names">
+                                    <div class="author__info-name">Virtual Art</div>
+                                    <div class="author__info-creator">by @wzard</div>
+                                </div>
+                                <div class="bid-likes explore-likes">
+                                    <img src="./img/heart.svg" alt="">
+                                    <div class="bid-likes__count explore-likes__count">92</div>
+                                </div>
                             </div>
                         </div>
+                        <div class="bid-price">
+                            <p class="bid-price__name explore-price__name">Current Bid</p>
+                            <p class="bid-price__price explore-price__price">4.89 ETH</p>
+                        </div>
                     </div>
-                    <div class="bid-price explore-price">
-                        <p class="bid-price__name explore-price__name">Current Bid</p>
-                        <p class="bid-price__price explore-price__price">4.89 ETH</p>
+                    <div class="explore-bid">
+                        <div class="explore-img">
+                            <a class="explore-img__img" href="#"><img  src="./img/exp3.jpg" alt="art"></a>
+                        </div>
+                        <div class="bid-author">
+                            <div class="bid-author__info">
+                                <img class="bid-avatar" src="./img/exp-ava.svg" alt="ava">
+                                <div class="bid-names">
+                                    <div class="author__info-name">Virtual Art</div>
+                                    <div class="author__info-creator">by @wzard</div>
+                                </div>
+                                <div class="bid-likes explore-likes">
+                                    <img src="./img/heart.svg" alt="">
+                                    <div class="bid-likes__count explore-likes__count">92</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bid-price explore-price">
+                            <p class="bid-price__name explore-price__name">Current Bid</p>
+                            <p class="bid-price__price explore-price__price">4.89 ETH</p>
+                        </div>
+                    </div>
+                    <div class="explore-bid hidden">
+                        <div class="explore-img">
+                            <a class="explore-img__img" href="#"><img  src="./img/exp2.jpg" alt="art"></a>
+                        </div>
+                        <div class="bid-author">
+                            <div class="bid-author__info">
+                                <img class="bid-avatar" src="./img/exp-ava.svg" alt="ava">
+                                <div class="bid-names">
+                                    <div class="author__info-name">Virtual Art</div>
+                                    <div class="author__info-creator">by @wzard</div>
+                                </div>
+                                <div class="bid-likes explore-likes">
+                                    <img src="./img/heart.svg" alt="">
+                                    <div class="bid-likes__count explore-likes__count">92</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bid-price explore-price">
+                            <p class="bid-price__name explore-price__name">Current Bid</p>
+                            <p class="bid-price__price explore-price__price">4.89 ETH</p>
+                        </div>
+                    </div>
+                    <div class="explore-bid hidden">
+                        <div class="explore-img">
+                            <a class="explore-img__img" href="#"><img  src="./img/exp3.jpg" alt="art"></a>
+                        </div>
+                        <div class="bid-author">
+                            <div class="bid-author__info">
+                                <img class="bid-avatar" src="./img/exp-ava.svg" alt="ava">
+                                <div class="bid-names">
+                                    <div class="author__info-name">Virtual Art</div>
+                                    <div class="author__info-creator">by @wzard</div>
+                                </div>
+                                <div class="bid-likes explore-likes">
+                                    <img src="./img/heart.svg" alt="">
+                                    <div class="bid-likes__count explore-likes__count">92</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bid-price explore-price">
+                            <p class="bid-price__name explore-price__name">Current Bid</p>
+                            <p class="bid-price__price explore-price__price">4.89 ETH</p>
+                        </div>
+                    </div>
+                    <div class="explore-bid hidden">
+                        <div class="explore-img">
+                            <a class="explore-img__img" href="#"><img  src="./img/exp3.jpg" alt="art"></a>
+                        </div>
+                        <div class="bid-author">
+                            <div class="bid-author__info">
+                                <img class="bid-avatar" src="./img/exp-ava.svg" alt="ava">
+                                <div class="bid-names">
+                                    <div class="author__info-name">Virtual Art</div>
+                                    <div class="author__info-creator">by @wzard</div>
+                                </div>
+                                <div class="bid-likes explore-likes">
+                                    <img src="./img/heart.svg" alt="">
+                                    <div class="bid-likes__count explore-likes__count">92</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bid-price explore-price">
+                            <p class="bid-price__name explore-price__name">Current Bid</p>
+                            <p class="bid-price__price explore-price__price">4.89 ETH</p>
+                        </div>
+                    </div>
+                    <div class="explore-bid hidden">
+                        <div class="explore-img">
+                            <a class="explore-img__img" href="#"><img  src="./img/exp3.jpg" alt="art"></a>
+                        </div>
+                        <div class="bid-author">
+                            <div class="bid-author__info">
+                                <img class="bid-avatar" src="./img/exp-ava.svg" alt="ava">
+                                <div class="bid-names">
+                                    <div class="author__info-name">Virtual Art</div>
+                                    <div class="author__info-creator">by @wzard</div>
+                                </div>
+                                <div class="bid-likes explore-likes">
+                                    <img src="./img/heart.svg" alt="">
+                                    <div class="bid-likes__count explore-likes__count">92</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bid-price explore-price">
+                            <p class="bid-price__name explore-price__name">Current Bid</p>
+                            <p class="bid-price__price explore-price__price">4.89 ETH</p>
+                        </div>
+                    </div>
+                    <div class="explore-bid hidden">
+                        <div class="explore-img">
+                            <a class="explore-img__img" href="#"><img  src="./img/exp3.jpg" alt="art"></a>
+                        </div>
+                        <div class="bid-author">
+                            <div class="bid-author__info">
+                                <img class="bid-avatar" src="./img/exp-ava.svg" alt="ava">
+                                <div class="bid-names">
+                                    <div class="author__info-name">Virtual Art</div>
+                                    <div class="author__info-creator">by @wzard</div>
+                                </div>
+                                <div class="bid-likes explore-likes">
+                                    <img src="./img/heart.svg" alt="">
+                                    <div class="bid-likes__count explore-likes__count">92</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bid-price explore-price">
+                            <p class="bid-price__name explore-price__name">Current Bid</p>
+                            <p class="bid-price__price explore-price__price">4.89 ETH</p>
+                        </div>
+                    </div>
+                    <div class="explore-bid hidden">
+                        <div class="explore-img">
+                            <a class="explore-img__img" href="#"><img  src="./img/exp3.jpg" alt="art"></a>
+                        </div>
+                        <div class="bid-author">
+                            <div class="bid-author__info">
+                                <img class="bid-avatar" src="./img/exp-ava.svg" alt="ava">
+                                <div class="bid-names">
+                                    <div class="author__info-name">Virtual Art</div>
+                                    <div class="author__info-creator">by @wzard</div>
+                                </div>
+                                <div class="bid-likes explore-likes">
+                                    <img src="./img/heart.svg" alt="">
+                                    <div class="bid-likes__count explore-likes__count">92</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bid-price explore-price">
+                            <p class="bid-price__name explore-price__name">Current Bid</p>
+                            <p class="bid-price__price explore-price__price">4.89 ETH</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
             <div class="auctions-btn">
                 <button class="btn-tr2">View All</button>
             </div>
         </div>
     </section>
-    <section class="rating">
+    <section class="rating" id="rating">
         <div class="container">
             <div class="circle-rose circle-rating"></div>
             <h4 class="title rating-title">Top Creators</h4>
@@ -432,7 +567,7 @@
             </div>
         </div>
     </section>
-    <section class="drop">
+    <section class="drop" id="drop">
         <div class="container">
             <h4 class="drop-title">Ready for Next NFT Drop?</h4>
             <div class="drop-form">

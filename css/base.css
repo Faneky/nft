@@ -1,3 +1,11 @@
+.hidden{
+    display: none;
+}
+
+
+a{
+    text-decoration: none;
+}
 p,
 li{
     margin: 0;
@@ -13,7 +21,6 @@ ul[class],
 ol[class] {
   list-style: none;
 }
-
 .maketforfigma{
     flex: 0 0 auto;
     background: #313a46;
@@ -49,9 +56,6 @@ html{
     height: 100%;
 }
 /******************************************************************/
-a{
-    text-decoration: none;
-}
 :root{
     font-family: 'Oxanium', cursive;
     font-family: 'Work Sans', sans-serif;
@@ -67,6 +71,17 @@ body{
     margin: 0;
     background-color: #1C121F;
 }
+/* scroll style */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #251928;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(125deg, #8613A5 18.61%, rgba(250, 250, 250, 0.65) 137.4%);
+}
+/*  */
 .title{
     text-align: center;
     color: var(--white-txt);
@@ -158,6 +173,10 @@ body{
 }
 .nav-link:hover{
     color: var(--orange);
+}
+.nav-link-active{
+    color: var(--orange);
+    margin-bottom: -20px;
 }
 .nav-burger{
     display: none;
@@ -648,11 +667,16 @@ body{
 .explore-circle {
     margin-right: 291px;
 }
-.popular-title {
-    padding-bottom: 84px;
+.explore-elements{
+    display: flex;
+    justify-content: center;
 }
 .explore-slider-elem{
-    overflow: hidden;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 32px;
+    /* overflow: hidden; */
 }
 .explore-img__img{
     display: block;
@@ -733,6 +757,7 @@ body{
 }
 .rating-elem-info{
     display: flex;
+    width: 100%;
 }
 .rating-elem-names {
     margin-left: 24px;
@@ -759,7 +784,7 @@ body{
     width: 3px;
     height: 100px;
     background: #49374E;
-    margin: 0 15px;
+    margin: 0 30px;
 }
 .rating-elem-counts {
     display: flex;
@@ -912,6 +937,14 @@ body{
     font-weight: 500;
     line-height: 252%;
 }
+@media (max-width: 1730px){
+    .explore-slider-elem{
+        text-align: center;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 @media (max-width: 1444px){
     .hworks-elem:last-child{
         margin-top: 100px;
@@ -920,6 +953,9 @@ body{
 @media (max-width: 1233px){
     .hworks-line1{
         margin-top: 80px;
+    }
+    .explore-slider-elem{
+        justify-content: start;
     }
 }
 @media (max-width: 1244px){
@@ -1073,7 +1109,11 @@ body{
         margin-right: 20px;
     }
     .rating-elements{
+        margin: 0 30px;
         gap: 40px;
+    }
+    .rating-elem{
+        min-width: 100%;
     }
     .hero-counts > *{
         margin-right: 25px;
@@ -1208,8 +1248,8 @@ body{
         padding: 15px 35px;
     }
     .explore-img__img::after{
-        width: 295px;
-        height: 318px;
+        width: 303px;
+        height: 244px;
     }
     .bid-auctions{
         background-color: #3D2942;
@@ -1258,6 +1298,10 @@ body{
     }
 }
 @media (max-width: 675px){
+    .header-container{
+        padding: 10px 0;
+        margin-bottom: 0;
+    }
     .nav-link,
     .wallet{
         display: none;
@@ -1294,6 +1338,17 @@ body{
     .footer-about,
     .footer-support{
         margin: 0 12px;
+    }
+    .explore-slider-elem{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .explore-bid{
+        margin-bottom: 20px;
+        margin-right: 0;
     }
 }
 @media (max-width: 565px){
@@ -1370,6 +1425,29 @@ body{
     .card-header__price{
         font-size: 22px;
     }
+    .rating-elem{
+        height: 102px;
+    }
+    .rating-elem-img{
+        height: 48px;
+        width: 48px;
+    }
+    .rating-elem__line{
+        height: 68px;
+        margin: -5px 15px;
+    }
+    .rating-elem-info__nickname{
+        font-size: 20px;
+    }
+    .rating-elem-info__price{
+        font-size: 14px;
+    }
+    .rating-elem-number{
+        font-size: 24px;
+    }
+    .rating-elem-items{
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 380px){
@@ -1421,8 +1499,8 @@ body{
         padding: 11px 36px;
     }
     .explore-img__img::after {
-        width: 210px;
-        height: 214px;
+        width: 260px;
+        height: 224px;
     }
     .rating-elem{
         align-items: center;
